@@ -15,7 +15,7 @@ export default function Home() {
       console.log('Fetched videos:', response.data.videos);
     } catch (error) {
       console.error('Error fetching videos:', error.message);
-      toast.error('You are Login plz login plz. Please try again later.');
+      toast.error(' Please try again later.');
 
     }
   };
