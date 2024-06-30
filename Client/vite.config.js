@@ -3,12 +3,13 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://youtubeapp-a2ua.onrender.com",
-      },
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     "/api": {
+  //       target: "https://youtubeapp-ug12.onrender.com",
+        
+  //     },
+  //   },
+  // },
   plugins: [react()],
 });

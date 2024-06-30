@@ -10,7 +10,7 @@ export default function ChangePassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     axios
-      .post("https://youtubeapp-a2ua.onrender.com/api/v1/users/change-password", {
+      .post("https://youtubeapp-ug12.onrender.com/api/v1/users/change-password", {
         oldPassword,
         newpassword,
       })

@@ -43,7 +43,7 @@ export default function Register() {
       setLoading(false)
     } else {
 
-      await axios.post("https://youtubeapp-a2ua.onrender.com/api/v1/users/register", formData)
+      await axios.post("https://youtubeapp-ug12.onrender.com/v1/users/register", formData)
         .then((res) => {
           console.log(res.data);
           toast('🦄 User registered successfully!', {

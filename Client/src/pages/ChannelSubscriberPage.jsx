@@ -28,7 +28,7 @@ export default function ChannelSubscriberPage() {
 
 
     try {
-      const res = await axios.post('/api/v1/videos', {}, {
+      const res = await axios.post('https://youtubeapp-ug12.onrender.com/api/v1/videos', {}, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
