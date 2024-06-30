@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://youtubeapp-a2ua.onrender.com",
+        target: "http://127.0.0.1:8000",
       },
     },
   },
