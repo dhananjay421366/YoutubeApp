@@ -29,7 +29,7 @@ export default function Home() {
       <div className="h-screen overflow-y-auto bg-[#121212] text-white">
         <div className="flex min-h-[calc(100vh-66px)] sm:min-h-[calc(100vh-82px)]">
           <aside
-            className="group fixed inset-x-0 bottom-0 z-40 w-full shrink-0 border-t border-white bg-[#121212] px-2 py-2 sm:absolute sm:inset-y-0 sm:max-w-[70px] sm:border-r sm:border-t-0 sm:py-6 sm:hover:max-w-[250px]">
+            className="group fixed inset-x-0 bottom-0 z-40 w-full shrink-0 border-t border-white bg-[#121212] px-2 py-2 sm:absolute sm:inset-y-0 sm:max-w-[70px] sm:border-r sm:border-t-0 sm:py-6 sm:hover:max-w-[250px] lg:sticky lg:max-w-[250px]">
             <ul className="flex justify-around gap-y-2 sm:sticky sm:top-[106px] sm:min-h-[calc(100vh-130px)] sm:flex-col">
               <Link to={"/videoList-page-by-card"}>
                 <li class="">
@@ -50,9 +50,11 @@ export default function Home() {
                         ></path>
                       </svg>
                     </span>
-                    <span class="block sm:hidden sm:group-hover:inline lg:inline">
-                      Home
-                    </span>
+                    <Link to={"/videoList-page-by-card"}>
+                      <span class="block sm:hidden sm:group-hover:inline lg:inline">
+                        Home
+                      </span>
+                    </Link>
                   </button>
                 </li>
               </Link>
@@ -73,7 +75,7 @@ export default function Home() {
                         stroke-linejoin="round"></path>
                     </svg>
                   </span>
-                  <span className="block sm:hidden sm:group-hover:inline">Liked Videos</span>
+                  <span className="block sm:hidden sm:group-hover:inline lg:inline">Liked Videos</span>
                 </button>
               </li>
               <li className="">
@@ -93,7 +95,7 @@ export default function Home() {
                         stroke-linejoin="round"></path>
                     </svg>
                   </span>
-                  <span className="block sm:hidden sm:group-hover:inline">History</span>
+                  <span className="block sm:hidden sm:group-hover:inline lg:inline">History</span>
                 </button>
               </li>
               <Link to={"/uplaod-video"}> <li className="hidden sm:block">
@@ -146,7 +148,11 @@ export default function Home() {
                         stroke-linejoin="round"></path>
                     </svg>
                   </span>
-                  <span className="block sm:hidden sm:group-hover:inline">Collections</span>
+                  <Link to={"/videoList-page-by-list"}>
+                    <span className="block sm:hidden sm:group-hover:inline lg:inline">
+                      Collections
+                    </span>
+                  </Link>
                 </button>
               </li>
               <li className="">
@@ -166,7 +172,11 @@ export default function Home() {
                         stroke-linejoin="round"></path>
                     </svg>
                   </span>
-                  <span className="block sm:hidden sm:group-hover:inline">Subscribers</span>
+                  <Link to={"/channel-subscriber-page"}>
+                    <span className="block sm:hidden sm:group-hover:inline lg:inline">
+                      Subscribers
+                    </span>
+                  </Link>
                 </button>
               </li>
               <li className="hidden sm:block mt-auto">
@@ -186,7 +196,11 @@ export default function Home() {
                         stroke-linejoin="round"></path>
                     </svg>
                   </span>
-                  <span className="block sm:hidden sm:group-hover:inline">Support</span>
+                  <Link to={"/privacy-policy"}>
+                    <span className="block sm:hidden sm:group-hover:inline lg:inline">
+                      Support
+                    </span>
+                  </Link>
                 </button>
               </li>
               <li className="hidden sm:block">
@@ -212,7 +226,11 @@ export default function Home() {
                         stroke-linejoin="round"></path>
                     </svg>
                   </span>
-                  <span className="block sm:hidden sm:group-hover:inline">Settings</span>
+                  <Link to={'/edit-personal-info'}>
+                    <span className="block sm:hidden sm:group-hover:inline lg:inline">
+                      Settings
+                    </span>
+                  </Link>
                 </button>
               </li>
             </ul>
