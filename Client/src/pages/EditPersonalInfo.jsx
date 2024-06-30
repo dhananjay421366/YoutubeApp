@@ -10,7 +10,7 @@ export default function EditPersonalInfo() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     axios
-      .patch("https://youtubeapp-ug12.onrender.com/api/v1/users/update-account", {
+      .patch("/api/v1/users/update-account", {
         fullname,
         username,
         email,

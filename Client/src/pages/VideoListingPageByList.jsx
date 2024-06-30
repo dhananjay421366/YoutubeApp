@@ -8,7 +8,7 @@ export default function VideoListingPageByList() {
 
   const fetchVideos = async () => {
     try {
-      const response = await axios.get('https://youtubeapp-ug12.onrender.com/api/v1/videos/', {
+      const response = await axios.get('/api/v1/videos/', {
       });
 
       setVideos(response.data.videos);
