@@ -91,7 +91,7 @@ const router = createBrowserRouter(
   )
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
-<>
+<React.StrictMode>
     <RouterProvider router={router} />
     <ToastContainer
       position="top-right"
@@ -105,5 +105,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       pauseOnHover
       theme="light"
     />
- </>
+  </React.StrictMode>
 );
