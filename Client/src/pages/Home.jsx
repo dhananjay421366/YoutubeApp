@@ -10,12 +10,13 @@ export default function Home() {
 
   const fetchVideos = async () => {
     try {
-      const response = await axios.get('/api/v1/videos', {
+      const response = await axios.get('/api/v1/videos/', {
+
       });
       setVideos(response.data.videos);
       console.log('Fetched videos:', response.data.videos);
     } catch (error) {
-      console.error('Error fetching videos:', error.message);
+      console.error('Error fetching videos:', error?.message);
       toast.error(' Please try again later.');
 
     }
