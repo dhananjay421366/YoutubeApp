@@ -10,7 +10,7 @@ export default function Home() {
 
   const fetchVideos = async () => {
     try {
-      const response = await axios.get('/api/v1/videos/', {
+      const response = await axios.get('https://youtubeapp-xcfa.onrender.com/videos', {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
