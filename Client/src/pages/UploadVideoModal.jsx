@@ -40,7 +40,7 @@ export default function UploadVideoModal() {
     formData.append('thumbnail', thumbnail);
 
     try {
-      const res = await axios.post('/api/v1/videos', formData, {
+      const res = await axios.post('/api/v1/videos/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

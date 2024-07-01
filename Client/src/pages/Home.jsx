@@ -10,7 +10,11 @@ export default function Home() {
 
   const fetchVideos = async () => {
     try {
-      const response = await axios.get('/api/v1/videos/');
+      const response = await axios.get('/api/v1/videos/', {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
       setVideos(response.data.videos);
       console.log('Fetched videos:', response.data.videos);
     } catch (error) {
