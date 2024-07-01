@@ -13,6 +13,7 @@ export default function Home() {
       const response = await axios.get('https://youtubeapp-xcfa.onrender.com/videos', {
         headers: {
           'Content-Type': 'multipart/form-data',
+          
         },
       });
       setVideos(response.data.videos);
